@@ -1,0 +1,3370 @@
+Please input entry(entry>0):
+8
+entry: 0          li R2,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 1          li R3,16
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          li R4,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R4,R3,EndLoopI
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N T  misprediction: 1
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N T  misprediction: 1
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(001, WN, SN, SN, SN, SN, SN, SN, SN) N T  misprediction: 2
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(001, WN, SN, SN, SN, SN, SN, SN, SN) N T  misprediction: 2
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, SN, SN, SN, SN, SN) N T  misprediction: 3
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, SN, SN, SN, SN, SN) N T  misprediction: 3
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, SN) N T  misprediction: 4
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, WN, SN, SN, SN, SN) N N  misprediction: 3
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, WN) N T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WN, SN, SN, SN, SN) N T  misprediction: 4
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, WT) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WN, SN, SN, WN, SN) N T  misprediction: 5
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WN, SN, WN, WN, SN) N T  misprediction: 6
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, WT, SN, WN, WN, SN) N N  misprediction: 6
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, WN, WN, SN) N T  misprediction: 7
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, WN, WT, SN) N T  misprediction: 8
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, WT, WT, SN) T T  misprediction: 8
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, WT, WT, SN) N N  misprediction: 8
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, WT, WT, SN) T T  misprediction: 8
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, WT, ST, SN) T T  misprediction: 8
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 8
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T T  misprediction: 5
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N T  misprediction: 1
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, SN, SN, SN, SN, SN, SN, SN) N T  misprediction: 2
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, WN, SN, SN, SN, ST) T N  misprediction: 6
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N T  misprediction: 9
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, WN, SN, SN, SN, WT) N T  misprediction: 7
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WN) N T  misprediction: 10
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, WN, SN, SN, WN, WT) N T  misprediction: 8
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 10
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, WN, SN, WN, WN, WT) N T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 11
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, WT) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 11
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 11
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 11
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T N  misprediction: 12
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 12
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 12
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 12
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WN) N N  misprediction: 12
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 12
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 12
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 12
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N N  misprediction: 2
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 12
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T T  misprediction: 9
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WN, SN, SN, SN, SN, SN, SN) N T  misprediction: 3
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, WN, SN, SN, SN, SN, SN, SN) N T  misprediction: 4
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, WT, SN, WN, WN, ST) T N  misprediction: 10
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 12
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, WT, SN, WN, WN, WT) N T  misprediction: 11
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 12
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, WT, SN, WN, WT, WT) N T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 13
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, WT, SN, WT, WT, WT) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, WT) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 13
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 13
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 13
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N N  misprediction: 4
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T T  misprediction: 12
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, WT, SN, SN, SN, SN, SN, SN) N T  misprediction: 5
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, WT, SN, SN, SN, SN, SN, SN) T T  misprediction: 5
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, WT, WT, ST) T N  misprediction: 13
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 13
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, WT, WT, WT) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 14
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, WT, ST, WT) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 14
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 14
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 14
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 5
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 14
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 13
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 6
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 6
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 14
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 15
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 15
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 15
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 15
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 6
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 15
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 14
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 7
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 7
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 15
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N T  misprediction: 16
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WN) N T  misprediction: 17
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 17
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 18
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 18
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 18
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 18
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T N  misprediction: 19
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 19
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 19
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 19
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WN) N N  misprediction: 19
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 19
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 19
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 19
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 7
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 19
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 15
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 8
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 8
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 16
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 19
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 19
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 20
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 20
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 20
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 20
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 8
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 16
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 9
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 9
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 17
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 20
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 21
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 21
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 21
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 21
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 9
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 21
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 17
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 10
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 10
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 18
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 22
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 22
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 22
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 22
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 10
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 22
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 18
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 11
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 11
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 19
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N T  misprediction: 23
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WN) N T  misprediction: 24
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 24
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 25
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 25
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 25
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 25
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T N  misprediction: 26
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 26
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 26
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 26
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WN) N N  misprediction: 26
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 26
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 26
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 26
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 11
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 26
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 19
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 12
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 12
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 20
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 26
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 26
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 27
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 27
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 27
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 27
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 12
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 20
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 13
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 13
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 21
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 27
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 28
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 28
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 28
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 28
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 13
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 28
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 21
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 14
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 14
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 22
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 29
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 29
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 29
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 29
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 14
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 29
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 22
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 15
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 15
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 23
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N T  misprediction: 30
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WN) N T  misprediction: 31
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 31
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 32
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 32
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 32
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 32
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T N  misprediction: 33
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 33
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 33
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, WN) T T  misprediction: 33
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, WN) N N  misprediction: 33
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 33
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 33
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 33
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 15
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 33
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 23
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 16
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 16
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 24
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 33
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 33
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 34
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 34
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 34
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 34
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 16
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 24
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 17
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 17
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T N  misprediction: 25
+entry: 4          li R5,0
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R5,R3,EndLoopJ
+(011, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 34
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(110, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(110, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T N  misprediction: 35
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(101, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(100, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(011, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, WN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, WT) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, WT, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 35
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 35
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(011, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(111, WN, WN, SN, ST, SN, ST, ST, SN) N N  misprediction: 35
+entry: 1          add R2,R2,R5
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(110, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N N  misprediction: 17
+entry: 6          add R6,R5,R4
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 7          andi R6,R6,3
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 0          bne R6,R0,Endif
+(101, WN, WN, SN, ST, SN, ST, ST, SN) T T  misprediction: 35
+entry: 2          addi R5,R5,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 3          beq R0,R0,LoopJ
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
+entry: 5          beq R5,R3,EndLoopJ
+(000, SN, ST, SN, SN, SN, SN, SN, SN) N T  misprediction: 18
+entry: 4          addi R4,R4,1
+(000, SN, SN, SN, SN, SN, SN, SN, SN) N N  misprediction: 0
+entry: 5          beq R0,R0,LoopI
+(001, WN, ST, SN, SN, SN, SN, SN, SN) T T  misprediction: 18
+entry: 3          beq R4,R3,EndLoopI
+(111, WN, WN, SN, ST, SN, ST, ST, ST) T T  misprediction: 25
